@@ -43,18 +43,6 @@
 	-webkit-text-fill-color: transparent;
 }
 
-.container-image figure {
-	margin: 0;
-	display: grid;
-	grid-template-rows: 1fr auto;
-	break-inside: avoid;
-	@apply md:!mb-[18px] !mb-3
-}
-
-.container-image {
-	@apply lg:columns-3 columns-2 md:gap-x-[18px] gap-x-3 hidden lg:block
-}
-
 .images {
 	display: grid;
 	grid-template-columns: repeat(12, minmax(0, 1fr));;
