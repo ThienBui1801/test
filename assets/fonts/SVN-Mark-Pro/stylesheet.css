@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProBlackItalic.woff2') format('woff2'),
+        url('SVN-MarkProBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProBlack.woff2') format('woff2'),
+        url('SVN-MarkProBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProBoldItalic.woff2') format('woff2'),
+        url('SVN-MarkProBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProBold.woff2') format('woff2'),
+        url('SVN-MarkProBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro Book';
+    src: url('SVN-MarkProBook.woff2') format('woff2'),
+        url('SVN-MarkProBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro Book';
+    src: url('SVN-MarkProBookItalic.woff2') format('woff2'),
+        url('SVN-MarkProBookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProExtraLightItalic.woff2') format('woff2'),
+        url('SVN-MarkProExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro Hairline';
+    src: url('SVN-MarkProHairlineItalic.woff2') format('woff2'),
+        url('SVN-MarkProHairlineItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProExtraLight.woff2') format('woff2'),
+        url('SVN-MarkProExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro Hairline';
+    src: url('SVN-MarkProHairline.woff2') format('woff2'),
+        url('SVN-MarkProHairline.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProItalic.woff2') format('woff2'),
+        url('SVN-MarkProItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProHeavy.woff2') format('woff2'),
+        url('SVN-MarkProHeavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProHeavyItalic.woff2') format('woff2'),
+        url('SVN-MarkProHeavyItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProLightItalic.woff2') format('woff2'),
+        url('SVN-MarkProLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkPro.woff2') format('woff2'),
+        url('SVN-MarkPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProLight.woff2') format('woff2'),
+        url('SVN-MarkProLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProThin.woff2') format('woff2'),
+        url('SVN-MarkProThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProMedium.woff2') format('woff2'),
+        url('SVN-MarkProMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProMediumItalic.woff2') format('woff2'),
+        url('SVN-MarkProMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Mark Pro';
+    src: url('SVN-MarkProThinItalic.woff2') format('woff2'),
+        url('SVN-MarkProThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+

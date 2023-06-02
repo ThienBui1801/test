@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		#svg-container {
+			width: 100%;
+		}
+
+		#my-svg {
+			width: 100%;
+		}
+	</style>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+
+<body style="height: 4000px;">
+	<div style="position: fixed; top: 0; left: 0; right: 0;">
+		<div id="svg-container">
+			<svg id="my-svg" style="height: 2000px;">
+				<rect id="my-rect" x="0" y="0" width="100" height="100"
+					fill="blue" />
+			</svg>
+		</div>
+
+	</div>
+
+	<script>
+		gsap.registerPlugin(ScrollTrigger);
+		const svg = document.getElementById('my-svg');
+		const rect = document.getElementById('my-rect');
+
+		// Thiết lập thuộc tính CSS ban đầu cho phần tử
+		gsap.set(rect, { x: '0' });
+
+		const tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: rect,
+				start: 'top center',
+				end: 'bottom center',
+				scrub: true,
+			}
+		});
+
+		// Di chuyển từ 0 tới 800
+		tl.to(rect, {
+			duration: 5,
+			x: '800px',
+			ease: 'power1.inOut',
+		});
+
+		// Di chuyển xuống 400
+		tl.to(rect, {
+			duration: 5,
+			y: '400px',
+			ease: 'power1.inOut',
+		});
+
+		// Di chuyển tiếp từ 800 đến 1200
+		tl.to(rect, {
+			duration: 5,
+			x: '1200px',
+			ease: 'power1.inOut',
+		});
+
+		// Di chuyển tiếp từ 400 tới 600
+		tl.to(rect, {
+			duration: 5,
+			y: '600px',
+			ease: 'power1.inOut',
+		});
+	</script>
+</body>
+
+</html>

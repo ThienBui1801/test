@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common */
+* {
+	scroll-behavior: smooth;
+}
+
+/* Keyframes */
+@keyframes ripple {
+	0% {
+		box-shadow: 0 0 0 0 rgb(254, 51, 137),
+			0 0 0 10px rgb(254, 51, 137), 0 0 0 20px rgb(254, 51, 137);
+	}
+
+	100% {
+		box-shadow: 0 0 0 10px rgb(254, 51, 137),
+			0 0 0 20px rgb(254, 51, 137), 0 0 0 40px rgb(50 100 245 / 0%);
+	}
+}
+
+@keyframes arrowDown {
+	from {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateY(60px);
+	}
+}
+
+/* Css */
+.play-video {
+	@apply inline-block w-[143px] h-[143px] rounded-full opacity-80 transition-all
+}
+
+.text-heading {
+	background: -webkit-linear-gradient(60deg, rgba(254, 51, 137, 1) 0%, rgba(230, 79, 31, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.container-image figure {
+	margin: 0;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	break-inside: avoid;
+	@apply md:!mb-[18px] !mb-3
+}
+
+.container-image {
+	@apply lg:columns-3 columns-2 md:gap-x-[18px] gap-x-3 hidden lg:block
+}
+
+.images {
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.images .image {
+	grid-column: span 4 / span 4;
+	/* padding: 12px; */
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.images .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: 0.25s;
+}
+
+.image:hover img {
+	transform: scale(1.2);
+}
+
+.gallery {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1000;
+	display: flex;
+	opacity: 0;
+	pointer-events: none;
+	transform: scale(0.8);
+	transition: 0.25s;
+}
+
+.gallery.show {
+	opacity: 1;
+	pointer-events: auto;
+	transform: scale(1);
+}
+
+.gallery-inner {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+
+.gallery-inner .gallery-container img {
+	margin: auto;
+	object-fit: cover;
+}
+
+.control {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.prev {
+	left: 15px;
+}
+
+.next {
+	right: 15px;
+}
+
+.close {
+	color: white;
+	font-size: 35px;
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	cursor: pointer;
+}
+
